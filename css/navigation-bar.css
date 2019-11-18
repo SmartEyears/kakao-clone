@@ -1,0 +1,33 @@
+.nav {
+    position: fixed;
+    width: 100%;
+    background-color: #FCFCFC;
+    padding: 20px 50px;
+    left: 0px;
+    bottom: 0px;
+    border-top: 1px solid #f7f7f7;
+}
+
+.nav .nav__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav .nav__list-link {
+    position: relative;
+}
+
+.nav .nav__badge {
+    position: absolute;
+    color: white;
+    top: -7px;
+    right: -5px;
+    background-color: #E56F5E;
+    width: 13px;
+    height: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 8pt;
+}

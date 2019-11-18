@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>게임별 | Kakao Clone</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"/>
-
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+    <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
     <div class="status-bar">
         <div class="status-bar__column">
@@ -21,41 +23,145 @@
             <i class="fas fa-battery-three-quarters"></i>
         </div>
     </div>
-    <hearder class = "header">
+    <hearder class="header">
         <div class="div header__header-column">
             <h1 class="header__title">게임별</h1>
         </div>
         <div class="div header__header-column">
             <span class="header__icon">
                 <i class="fas fa-search"></i>
-            </span>
-            <span class="header__icon">
-                <i class="fas fa-comment-medical"></i>
-            </span>
-            <span class="header__icon">
-                <i class="fas fa-music"></i>
-            </span>
-            <span class="header__icon">
-                <i class="fas fa-cog"></i>
-            </span>
+                <span class="header__icon">
+                    <i class="fas fa-cog"></i>
+                </span>
         </div>
     </hearder>
+    <main class="game">
+        <img src="image/game_main.JPG" alt="" class="game__main-img">
+        <div class="game__hot">
+            <h5>게임별 핫게임</h5>
+            <ul class='game__game-list'>
+                <li class="game__game-list-a game-list-a">
+                    <img src="image/tenten.JPG" class="game__game-list-a__icon">
+                    <span class="game-list-a__title">
+                        텐바이텐 클래식
+                    </span>
+                </li>
+                <li class="game__game-list-a game-list-a">
+                    <img src="image/bing.JPG" class="game__game-list-a__icon">
+                    <span class="game-list-a__title">
+                        빙글빙글 터치
+                    </span>
+                </li>
+                <li class="game__game-list-a game-list-a">
+                    <img src="image/royal.JPG" class="game__game-list-a__icon">
+                    <span class="game-list-a__title">
+                        클래시 로얄 프렌즈
+                    </span>
+                </li>
+                <li class="game__game-list-a game-list-a">
+                    <img src="image/friend.JPG" class="game__game-list-a__icon">
+                    <span class="game-list-a__title">
+                        프렌즈뽑기
+                    </span>
+                </li>
+            </ul>
+        </div>
+        <div class="game__reco">
+            <h5>게임별 추천 게임</h5>
+            <ul class="game__reco-list">
+                <img src="image/reco1.JPG" class="game__img-reco">
+                <li class="game__reco-list__a">
+                    <div class="game__reco__column">
+                        <span class="game__reco__time">14시간 남음</span>
+                    </div>
+                    <div class="game__reco__column">
+                        <span class="game__reco__text">
+                            <i class="fas fa-share-alt"></i>
+                            <span>|
+                                <i class="fas fa-play"></i>
+                                게임하기
+                            </span>
+                        </span>
+                    </div>
+                </li>
+                <img src="image/reco2.JPG" class="game__img-reco">
+                <li class="game__reco-list__a">
+                    <div class="game__reco__column">
+                        <span class="game__reco__time">14시간 남음</span>
+                    </div>
+                    <div class="game__img__column">
+                        <span class="game__reco__text">
+                            <i class="fas fa-share-alt"></i>
+                            <span>|
+                                <i class="fas fa-play"></i>
+                                게임하기
+                            </span>
+                        </span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <ul class="game__story">
+            <h5>게임별 스토리</h5>
+            <li class="game__story-list">
+                <img src="image/story.JPG" class="game__story-img">
+                <div class="game__story-content">
+                    <span class="story__preview">
+                        선택은 자유!
+                    </span>
+                    <span class="story__preview">
+                        우리 둘의 마지막 이야기
+                    </span>
+                    <span class="story__name">
+                        조별과제썸톡 12화
+                    </span>
+                </div>
+            </li>
+            <div class='game__plus'>
+                <i class="fas fa-plus-circle"></i>
+                <span>더보기</span>
+            </div>
+        </ul>
+        <ul class="game__popular">
+            <h5>게임별 인기 게임</h5>
+            <li class="game__popular-list">
+                <img src="image/popular.JPG" class="game__popular-img">
+                <div class="popular__column">
+                    <div class="game__popular-list">
+                        <span class="popular__name">
+                            라이언의 지구로 가는 길
+                        </span>
+                        <span class="popular__preview">
+                            라이언이 하루 빨리 지구로 갈 수 맀게 도와주세요.
+                        </span>
+                    </div>
+                </div>
+                <div class="popular__column">
+                    <span class="popular__play">
+                        시작하기
+                        <i class="fas fa-play"></i>
+                    </span>
+                </div>
+            </li>
+        </ul>
+    </main>
     <nav class="nav">
-        <ul class="nav_list">
+        <ul class="nav__list">
             <!--li.nav__list-item*4>a.nav__list-link 4줄-->
             <li class="nav__list-item">
                 <a href="friend.html" class="nav__list-link">
                     <i class="far fa-user"></i>
                 </a>
-                </li>
+            </li>
             <li class="nav__list-item">
                 <a href="index.html" class="nav__list-link">
+                    <div class="nav__badge">8</div>
                     <i class="far fa-comment"></i>
                 </a>
             </li>
             <li class="nav__list-item">
                 <a href="game.html" class="nav__list-link">
-                     <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
                 </a>
             </li>
             <li class="nav__list-item">
@@ -66,4 +172,5 @@
         </ul>
     </nav>
 </body>
+
 </html>

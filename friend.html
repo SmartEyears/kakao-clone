@@ -1,69 +1,142 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>친구 | Kakao Clone</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"/>
 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>친구 | Kakao Clone</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+  <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-    <div class="status-bar">
-        <div class="status-bar__column">
-            <span class="staus-bar__clock">10:00</span>
-        </div>
-        <div class="status-bar__column">
-            <i class="far fa-clock"></i>
-            <i class="fas fa-volume-mute"></i>
-            <i class="fas fa-wifi"></i>
-            <span class="status-bar__bettery-level">75%</span>
-            <i class="fas fa-battery-three-quarters"></i>
-        </div>
+  <div class="status-bar">
+    <div class="status-bar__column">
+      <span class="staus-bar__clock">10:00</span>
     </div>
-    <hearder class = "header">
-        <div class="div header__header-column">
-            <h1 class="header__title">친구</h1>
+    <div class="status-bar__column">
+      <i class="far fa-clock"></i>
+      <i class="fas fa-volume-mute"></i>
+      <i class="fas fa-wifi"></i>
+      <span class="status-bar__bettery-level">75%</span>
+      <i class="fas fa-battery-three-quarters"></i>
+    </div>
+  </div>
+  <hearder class="header">
+    <div class="div header__header-column">
+      <h1 class="header__title">친구</h1>
+    </div>
+    <div class="div header__header-column">
+      <span class="header__icon">
+        <i class="fas fa-search"></i>
+      </span>
+      <span class="header__icon">
+        <i class="fas fa-user-plus"></i>
+      </span>
+      <span class="header__icon">
+        <i class="fas fa-music"></i>
+      </span>
+      <span class="header__icon">
+        <i class="fas fa-cog"></i>
+      </span>
+    </div>
+  </hearder>
+  <main class="friends">
+    <header class="friends__header">
+      <li class="friends__friend friend friend--lg">
+        <div class="friend__column">
+          <img src="image/avatar.jpg" class="g-avatar friend__avatar" />
+          <div class="friend__content">
+            <span class="friend__name">
+              앤디워홀
+            </span>
+            <span class="friend__status">
+              작업중...
+            </span>
+          </div>
+          <div class="friend__column">
+          </div>
         </div>
-        <div class="div header__header-column">
-            <span class="header__icon">
-                <i class="fas fa-search"></i>
+      </li>
+    </header>
+    <div class="friends__birthday">
+      <h5 class="friends__title">생일인 친구</h5>
+      <div class="friends__friend friend">
+        <div class="friend__column">
+          <img src="image/birth.jpg" class="friend__avatar" />
+          <div class="friend__content">
+            <span class="friend__name">
+              친구의 생일을 확인해보세요!
             </span>
-            <span class="header__icon">
-                <i class="fas fa-comment-medical"></i>
-            </span>
-            <span class="header__icon">
-                <i class="fas fa-music"></i>
-            </span>
-            <span class="header__icon">
-                <i class="fas fa-cog"></i>
-            </span>
+          </div>
         </div>
-    </hearder>
-    <nav class="nav">
-        <ul class="nav_list">
-            <!--li.nav__list-item*4>a.nav__list-link 4줄-->
-            <li class="nav__list-item">
-                <a href="friend.html" class="nav__list-link">
-                    <i class="fas fa-user"></i>
-                </a>
-                </li>
-            <li class="nav__list-item">
-                <a href="index.html" class="nav__list-link">
-                    <i class="far fa-comment"></i>
-                </a>
-            </li>
-            <li class="nav__list-item">
-                <a href="game.html" class="nav__list-link">
-                    <i class="far fa-star"></i>
-                </a>
-            </li>
-            <li class="nav__list-item">
-                <a href="more.html" class="nav__list-link">
-                    <i class="fas fa-ellipsis-h"></i>
-                </a>
-            </li>
-        </ul>
-    </nav>
+      </div>
+    </div>
+    <div class="friends__reco">
+      <h5 class="friends__title">추천친구</h5>
+      <div class="friends__friend friend">
+        <div class="friend__column">
+          <img src="image/smile.jpg" class="friend__avatar" />
+          <div class="friend__content">
+            <span class="friend__name">
+              새로운 친구를 만나보세요!
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <ul class="friends__list">
+      <h5 class="friends__title">친구 170</h5>
+      <li class="friends__friend friend friend--lg">
+        <div class="friend__column">
+          <img src="image/diorjpg.jpg" class="friend__avatar" />
+          <div class="friend__content">
+            <span class="friend__name">
+              크리스찬디올
+            </span>
+            <span class="friend__status">
+              black..
+            </span>
+          </div>
+        </div>
+        <div class="friend__column">
+          <div class="friend__now-listening">
+            <span>
+              천둥벌거숭이 - 지코(Feat.염따)
+              <i class="fas fa-play"></i>
+            </span>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </main>
+  <nav class="nav">
+    <ul class="nav__list">
+      <!--li.nav__list-item*4>a.nav__list-link 4줄-->
+      <li class="nav__list-item">
+        <a href="friend.html" class="nav__list-link">
+          <i class="fas fa-user"></i>
+        </a>
+      </li>
+      <li class="nav__list-item">
+        <a href="index.html" class="nav__list-link">
+          <div class="nav__badge">8</div>
+          <i class="far fa-comment"></i>
+        </a>
+      </li>
+      <li class="nav__list-item">
+        <a href="game.html" class="nav__list-link">
+          <i class="far fa-star"></i>
+        </a>
+      </li>
+      <li class="nav__list-item">
+        <a href="more.html" class="nav__list-link">
+          <i class="fas fa-ellipsis-h"></i>
+        </a>
+      </li>
+    </ul>
+  </nav>
 </body>
+
 </html>

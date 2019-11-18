@@ -1,0 +1,114 @@
+.game .game__main-img{
+    width: 100%;
+    height: 150px;
+}
+
+.game .game__hot h5,
+.game .game__reco h5,
+.game .game__story h5,
+.game .game__popular h5 {
+    border-top: 5px solid #f7f7f7;
+    padding: 10px 10px;
+    font-weight: bold;
+}
+.game .game__game-list {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+}
+
+.game__game-list .game__game-list-a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.game__game-list .game__game-list-a__icon {
+    width: 50px;   
+}
+
+.game__game-list .game-list-a__title {
+    display: block;
+    padding-top: 5px;
+    font-size: 12px;
+    font-weight: 600;
+}
+    
+.game__reco-list .game__img-reco{
+    width: 100%;
+    height: 100px;
+    z-index: 1;
+}
+
+.game__reco .game__reco-list {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.game__reco-list .game__reco-list__a {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    color:black;
+    z-index: 2;
+    width: 100%; 
+}
+
+.game__story .game__story-img {
+    width: 30%;
+    height: 50px;  
+}
+.game__story .game__story-list {
+    border-top: 1px solid #f7f7f7;
+    padding-top: 10px;
+    display: flex;
+}
+.game__story .game__story-content {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+
+.game__story-content .story__name {
+    padding: 10px 10px; 
+    opacity: 0.6;
+    font-size: 11px;
+}
+
+.game .game__plus {
+    display: flex;
+    border-top: 1px solid #f7f7f7;
+    padding: 10px 10px;
+    justify-content: center;
+}
+
+.game__popular-list .game__popular-img {
+    width: 50px;
+}
+.game__popular .game__popular-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popular__column .game__popular-list {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.game__popular-list .popular__name {
+    font-weight: bold;
+}
+
+.game__popular-list .popular__preview {
+    padding-top: 5px;   
+    font-size: 11px;
+    opacity: 0.6;
+}
+.game__popular-list .popular__play {
+    border: 0.5px black solid;
+    padding: 6px 8px;
+    border-radius: 2px;
+}
