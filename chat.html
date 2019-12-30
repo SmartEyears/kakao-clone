@@ -8,9 +8,10 @@
     <title>채팅 | Kakao Clone</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/chat.css">
 </head>
 
-<body>
+<body class="chats-body">
     <div class="status-bar">
         <div class="status-bar__column">
             <span class="staus-bar__clock">10:00</span>
@@ -28,7 +29,7 @@
             <a href="index.html" class="header__back-btn">
                 <i class="fas fa-arrow-left"></i>
             </a>
-            <h1 class="header__title">마를린먼로</h1>
+            <h1 class="header__title">크리스찬디올</h1>
         </div>
         <div class="div header__header-column">
             <span class="header__icon">
@@ -39,30 +40,48 @@
             </span>
         </div>
     </hearder>
-    <main class="chat">
+    <main class="chat-screen">
         <ul class="chat__messages">
             <span class="chat__timestamp">2019년 11월 15일</span>
             <li class="incoming-message message">
-                <img src="image/avatar.jpg" class="g-avatar message__avatar">
+                <img src="image/diorjpg.jpg" class="g-avatar message__avatar">
                 <div class="message__content">
-                    <span class="message__author">마를린먼로</span>
-                    <div class="message__bubble">
+                    <span class="message__author">크리스찬디올</span>
+                    <span class="message__bubble">
                         안녕 오랜만이야!
-                    </div>
+                    </span>
                 </div>
                 <span class="message__timestamp">00:00</span>
             </li>
-            <li class="incoming-message message">
+            <li class="sent-message message">
                 <span class="message__timestamp">00:00</span>
                 <div class="message__content">
-                    <div class="message__bubble">
+                    <span class="message__bubble">
                         오랜만이야 그 동안 어떻게 지냈어?
-                    </div>
+                    </span>
+                </div>
+            </li>
+            <li class="incoming-message message">
+                <img src="image/diorjpg.jpg" class="g-avatar message__avatar">
+                <div class="message__content">
+                    <span class="message__author">크리스찬디올</span>
+                    <span class="message__bubble">
+                        잘 지냈지
+                    </span>
+                </div>
+                <div class="message__timestamp">00:00</div>
+            </li>
+            <li class="sent-message message">
+                <div class="message__timestamp">00:00</div>
+                <div class="message__content">
+                    <span class="message__bubble">
+                        그렇구나
+                    </span>
                 </div>
             </li>
         </ul>
     </main>
-    <div class="chat_write">
+    <div class="chat__write">
         <div class="chat__write-column">
             <i class="fas fa-plus"></i>
         </div>

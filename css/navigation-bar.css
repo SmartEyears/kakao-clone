@@ -13,15 +13,19 @@
     justify-content: space-between;
 }
 
+.nav i {
+    font-size: 20px;
+}
+
 .nav .nav__list-link {
     position: relative;
 }
 
 .nav .nav__badge {
     position: absolute;
-    color: white;
     top: -7px;
     right: -5px;
+    color: white;
     background-color: #E56F5E;
     width: 13px;
     height: 13px;
