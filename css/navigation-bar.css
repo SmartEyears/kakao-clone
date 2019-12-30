@@ -1,5 +1,6 @@
 .nav {
     position: fixed;
+    z-index: 3;
     width: 100%;
     background-color: #FCFCFC;
     padding: 20px 50px;
